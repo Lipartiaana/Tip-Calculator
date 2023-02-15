@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Tip Calculator</h1>
+    <div class="calculator-container">
+        <div class="container">
+            <div class="bill-input">
+                <div class="error-flex">
+                <label for="bill">Bill</label>
+                <p class="error-message" id="bill-error">can't be lower than 0.0</p></div>
+                <input type="number" name="bill" id="bill">
+            </div>
+            <div class="tip-input">
+                <p class="tip-label">Select Tip</p>
+                <div class="grid-container">
+                <div class="tip-percent">
+                    5%
+                </div>
+                <div class="tip-percent">
+                    10%
+                </div>
+                <div class="tip-percent active" id="main-tip">
+                    15%
+                </div>
+                <div class="tip-percent">
+                    25%
+                </div>
+                <div class="tip-percent">
+                    50%
+                </div>
+                <div class="tip-percent">
+                    <input type="number" class="custom" name="custom" id="custom" placeholder="CUSTOM">
+                </div></div>
+            </div>
+            <div class="number-of-people">
+                <div class="error-flex">
+                <label for="people">Number of people</label>
+                <p class="error-message" id="people-error">can't be lower than 1</p></div>
+                <input type="number" name="people" id="people">
+            </div>
+        </div>
+        <div class="container result-container">
+            <div class="results">
+            <div class="result">
+                <div class="result-text">
+                    <h3>Tip Amount</h3>
+                    <p>/person</p>
+                </div>
+                <div>
+                    <p class="result-big-text" id="tip">$ 0.00</p>
+                </div>
+            </div>
+            <div class="result">
+                <div class="result-text">
+                    <h3>Total</h3>
+                    <p>/person</p>
+                </div>
+                <div>
+                    <p class="result-big-text" id="total">$ 0.00</p>
+                </div>
+            </div></div>
+            <button class="reset" id="reset">RESET</button>
+        </div>
+    </div>
+</body>
+</html>
